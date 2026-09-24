@@ -3,7 +3,7 @@ using Npgsql;
 
 namespace View.Data
 {
-    public class DbWrapper
+    public class DbWrapper : IDbWrapper
     {
         private readonly DbConfig _config;
 

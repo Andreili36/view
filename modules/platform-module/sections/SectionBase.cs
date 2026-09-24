@@ -6,7 +6,7 @@ namespace View.Modules.PlatformModule.Sections
     public abstract class SectionBase
     {
         protected PlatformMain Host { get; }
-        protected DbWrapper Db => Host.Db;
+        protected IDbWrapper Db => Host.Db;
         protected int RoleId => Host.RoleId;
 
         protected SectionBase(PlatformMain host) => Host = host;

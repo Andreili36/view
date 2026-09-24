@@ -9,6 +9,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Compile Remove="tests/**/*.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Npgsql" Version="8.0.3" />
 	</ItemGroup>
 </Project>

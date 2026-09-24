@@ -14,7 +14,7 @@ public class PlatformMain
     public int RoleId { get; }
     public string UserName { get; }
     public Window Window => _form;
-    public Data.DbWrapper Db => _form.Db;
+    public Data.IDbWrapper Db => _form.Db;
 
     public PlatformMain(MainForm form, int roleId, string userName)
     {

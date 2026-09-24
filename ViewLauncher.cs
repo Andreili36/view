@@ -7,7 +7,7 @@ namespace View
     {
         public static void Run()
         {
-            DbWrapper db;
+            IDbWrapper db;
             try
             {
                 db = new DbWrapper();
